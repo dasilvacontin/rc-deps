@@ -9,12 +9,14 @@
     "url": "https://github.com/dasilvacontin/rc-deps"
   },
   "bugs": "https://github.com/dasilvacontin/rc-deps/issues",
-  "bin": "bin/rc-deps",
+  "bin": {
+    "rc-install": "bin/rc-install.js"
+  },
   "scripts": {
     "lint": "standard src/**/*",
     "test": "babel-node test/index.js | tap-spec",
     "test:watch": "gaze 'npm test' 'test/**/*.js' 'src/**/*.js' 'index.js'",
-    "build": "babel src --out-dir . && mv bin/bin.js bin/rc-deps",
+    "build": "babel src --out-dir .",
     "start": "npm run test:watch",
     "coverage": "babel-node ./node_modules/.bin/isparta cover test/index.js",
     "pretest": "npm run lint",

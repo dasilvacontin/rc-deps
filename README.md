@@ -16,7 +16,7 @@ $ npm i -g rc-deps
 ## CLI
 
 ```bash
-➜ rc-deps
+➜ rc-install
 > checking `.eslintrc`...
 > npm install --save-dev eslint-config-standard eslint-config-standard-react eslint-config-standard-jsx babel-eslint eslint-plugin-flow-vars
 loadDep:lodash.keys → hea ▀ ╢███████████████████████████████████████░░░░░░░░░░░╟
