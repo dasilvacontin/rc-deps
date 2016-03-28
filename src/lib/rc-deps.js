@@ -38,6 +38,7 @@ export function listDeps (filename, rc) {
   for (var setting in rcConfig) {
     const type = rcConfig[setting]
     const value = rc[setting]
+    if (!value) continue
 
     const getDepName = name => getDepNameWithProgramAndType(program, type, name)
     if (Array.isArray(value)) deps.push.apply(deps, value.map(getDepName))
