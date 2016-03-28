@@ -19,7 +19,7 @@
     "coverage": "babel-node ./node_modules/.bin/isparta cover test/index.js",
     "pretest": "npm run lint",
     "precoverage": "npm run lint",
-    "prepublish": "npm run test"
+    "prepublish": "npm run test && npm run build"
   },
   "main": "lib/rc-deps.js",
   "files": [

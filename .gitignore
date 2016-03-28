@@ -1,5 +1,9 @@
 # Created by https://www.gitignore.io
 
+### Build ###
+/lib/
+/bin/
+
 ### Node ###
 # Dependency directory
 node_modules
